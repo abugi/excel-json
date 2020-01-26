@@ -150,6 +150,10 @@ body {
   margin-bottom: 2%;
 }
 
+#sample-file {
+  text-align: center;
+}
+
 #noprint {
   display: inline-block;
   margin-top: 2%;
