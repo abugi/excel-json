@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>My Result</title>
+  </head>
+  <body>
+    <section id="my-result">
+      <h2><%= result.school_name %> Academic Result</h2>
+      <div>
+        <div class="student-data">
+          <span>Registration Number:</span><span><%= result.reg_no %></span>
+        </div>
+        <div class="student-data">
+          <span>Student Name:</span><span><%= result.student_name %></span>
+        </div>
+        <div class="student-data">
+          <span>Student Class:</span><span><%= result.student_class %></span>
+        </div>
+        <div class="student-data">
+          <span>School Name:</span><span><%= result.school_name %></span>
+        </div>
+        <div id="subjects">
+          <div>Subjects Offered</div>
+          <table class="table table-bordered">
+            <thead>
+              <th>Subject Name</th>
+              <th>Score</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mathematics</td>
+                <td><%= result.subjects_offered.math%></td>
+              </tr>
+              <tr>
+                <td>English Language</td>
+                <td><%= result.subjects_offered.english%></td>
+              </tr>
+              <tr>
+                <td>Biology</td>
+                <td><%= result.subjects_offered.biology%></td>
+              </tr>
+              <tr>
+                <td>Chemistry</td>
+                <td><%= result.subjects_offered.chemistry%></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <button
+        id="noprint"
+        class="btn btn-md btn-default"
+        onclick="window.print()"
+      >
+        Print Result
+      </button>
+    </section>
+  </body>
+</html>

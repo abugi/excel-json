@@ -1,0 +1,184 @@
+:root {
+  --box-shadow: 3px 4px 14px 2px rgba(0, 0, 0, 0.29);
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #e4f8f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#upload-result-container {
+  width: 60%;
+  margin: 10% auto;
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 0 3%;
+}
+
+#upload-result-container > a {
+  display: inline-block;
+  font-size: 1.3rem;
+  text-decoration: none;
+  background: green;
+  color: #fff;
+  padding: 7px 10px;
+  border-radius: 5px;
+  margin: 3% 0;
+}
+
+#upload-result-container > form {
+  margin: 10% 0;
+  background: #fff;
+  padding: 3%;
+  box-shadow: var(--box-shadow);
+}
+
+#upload-result-container > form div {
+  font-size: 1.3rem;
+  color: green;
+  margin-bottom: 5%;
+}
+
+#upload-result-container > form #submit {
+  display: block;
+  margin: 4% 0;
+  background: green;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+#check-result-container {
+  width: 50%;
+  background-color: #fff;
+  padding: 3%;
+  border-radius: 7px;
+  margin: 20% auto;
+  box-shadow: var(--box-shadow);
+}
+
+#check-result-container label {
+  color: green;
+}
+
+#check-result-container input {
+  display: inline-block;
+  margin: 0 2%;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#check-result-container input[type="text"] {
+  border: 1px solid #ccc;
+  width: 40%;
+}
+
+#check-result-container input[type="submit"] {
+  color: #fff;
+  background: green;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.preview-container {
+  margin: 10% auto;
+  font-size: 1.2rem;
+  padding: 5%;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+}
+
+.preview-container input[type="submit"] {
+  background-color: green;
+  padding: 1% 2%;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.preview-container h4 {
+  color: green;
+}
+
+#my-result {
+  width: 60%;
+  margin: 10% auto;
+  padding: 2%;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+}
+
+#my-result h2 {
+  color: green;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+#my-result > div {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 2%;
+}
+
+#my-result .student-data span:nth-child(1) {
+  display: inline-block;
+  width: 25%;
+  color: green;
+  font-weight: 600;
+  margin: 1%;
+}
+
+#my-result #subjects {
+  width: 100%;
+  margin: 3% 0;
+  padding: 2%;
+}
+
+#subjects > div:nth-child(1) {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: green;
+  margin-bottom: 2%;
+}
+
+#noprint {
+  display: inline-block;
+  margin-top: 2%;
+}
+
+@media only screen and (max-width: 820px) {
+  #upload-result-container {
+    width: 90%;
+  }
+
+  #check-result-container {
+    width: 90%;
+    margin-top: 40%;
+  }
+
+  #check-result-container label {
+    display: block;
+    margin-bottom: 3%;
+    margin-left: 2%;
+  }
+
+  #check-result-container input[type="text"] {
+    border: 1px solid #ccc;
+    width: 55%;
+  }
+}
+
+@media print {
+  #noprint {
+    visibility: hidden;
+  }
+}
