@@ -3,7 +3,8 @@ const express = require("express"),
   path = require("path"),
   bodyParser = require("body-parser"),
   xlstojson = require("xls-to-json-lc"),
-  xlsxtojson = require("xlsx-to-json");
+  xlsxtojson = require("xlsx-to-json"),
+  port = "3000";
 
 //Initialize database connection
 require("./config/db.config");
@@ -131,6 +132,6 @@ app.get("/checkresult", async (req, res) => {
   res.render("my_result", { result });
 });
 
-app.listen("3000", () => {
+app.listen(process.env.PORT || port, () => {
   console.log("running on 3000...");
 });
