@@ -5,6 +5,7 @@ const express = require("express"),
   xlstojson = require("xls-to-json-lc"),
   xlsxtojson = require("xlsx-to-json"),
   port = "3000";
+require("dotenv").config();
 
 //Initialize database connection
 require("./config/db.config");

@@ -26,6 +26,9 @@ build/Release
 # Dependency directory
 node_modules
 
+#Environment variables
+.env
+
 # Optional npm cache directory
 .npm
 

@@ -1,5 +1,5 @@
 const mongoose = require("mongoose"),
-  mongoURI = "mongodb://abugi:jankara@ds121535.mlab.com:21535/greenbrainfinal";
+  mongoURI = process.env.DB_CONNECTION_STRING;
 
 mongoose.connect(
   mongoURI,
